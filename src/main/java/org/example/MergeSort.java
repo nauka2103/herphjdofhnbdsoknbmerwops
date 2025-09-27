@@ -3,7 +3,7 @@ package org.example;
 import java.util.Arrays;
 
 public class MergeSort {
-    private static final int CUTOFF = 16; // для маленьких массивов используем Insertion Sort
+    private static final int CUTOFF = 16;
 
     public static void sort(int[] arr) {
         int[] buffer = new int[arr.length];
@@ -51,7 +51,6 @@ public class MergeSort {
         }
     }
 
-    // Быстрая проверка
     public static void main(String[] args) {
         int[] arr = {5, 3, 8, 4, 2, 7, 1, 10};
         MergeSort.sort(arr);
